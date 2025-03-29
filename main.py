@@ -1,3 +1,4 @@
+import os
 import uuid
 import asyncio
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
@@ -108,4 +109,4 @@ async def websocket_endpoint(websocket: WebSocket, room_id: str):
 
 if __name__ == "__main__":
     print("🚀 Starting WebRTC Signaling Server...")
-    uvicorn.run(app, host="0.0.0.0", port=8080)
+    uvicorn.run(app, host="0.0.0.0", port= int(os.environ.get('PORT', 8080)))
