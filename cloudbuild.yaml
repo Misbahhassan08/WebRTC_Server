@@ -31,6 +31,6 @@ steps:
       - '--quiet'
       
 
-timeout: '1200s'  # Adjust timeout as necessary
+timeout: '6200s'  # Adjust timeout as necessary
 options:
   logging: CLOUD_LOGGING_ONLY
