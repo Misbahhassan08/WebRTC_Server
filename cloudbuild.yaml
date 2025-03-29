@@ -20,7 +20,7 @@ steps:
       - 'gcloud'
       - 'run'
       - 'deploy'
-      - 'WebRTC_Server'
+      - 'babyserver'
       - '--image'
       - 'gcr.io/vertex-model-training/babyserver'
       - '--platform'
